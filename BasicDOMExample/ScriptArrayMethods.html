@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Array Methods</title>
+    <script type="text/javascript">
+    	// month array
+        var monthName = [
+		"January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December"
+        ];
+
+        // display the number of element in the monthArray
+        document.write("The array size is " + monthName.length + " elements.");
+
+        // display the original array element
+        document.write("</br><br/>The original array elements are: ");
+        for (var count = 0; count < monthName.length; count++) {
+        	document.write("<br/>" + monthName[count]);
+        }
+
+        // sort the monthName array
+        monthName.sort();
+        document.write("</br><br/>The sorted array elements are: ");
+        for (var count = 0; count < monthName.length; count++) {
+        	document.write("<br/>" + monthName[count]);
+        }
+
+        // reduce the array size to 3
+        monthName.length = 3;
+
+        // display the array elements after reducing its length
+        document.write("</br><br/>The reduced array elements are: ");
+        for (var count = 0; count < monthName.length; count++) {
+        	document.write("<br/>" + monthName[count]);
+        }
+
+        var numArr = [3, 45, 1234, 24];
+        document.write("<br/><br/>Sorting Numerical Values: " + numArr.sort(numSort));
+
+        function numSort(a, b) {
+        	return a - b;
+        }
+
+        var newArr = ['a', 'b', 'c'];
+        newArr.push('d', 'e');
+        document.write("<br/>" + newArr.toString());
+        document.write("<br/>");
+        document.write(numArr.concat(newArr));
+        document.write("<br/>");
+        document.write(numArr.join(newArr));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Using DOM Methods</title>
+</head>
+<body>
+    <h1>Using getElementsByTagName</h1>
+    <p>Content paragraph 1</p>
+    <p>Content paragraph 2</p>
+    <p>Content paragraph 3</p>
+
+    <script type="text/javascript">
+    	"use strict";
+    	var firstPara = document.getElementsByTagName('p').item(0).innerHTML;
+    	var secondPara = document.getElementsByTagName('p')[1].textContent;
+
+    	document.write(firstPara + "<br/>" + secondPara);
+
+    </script>
+
+</body>
+</html>

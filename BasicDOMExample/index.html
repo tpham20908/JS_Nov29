@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Basic DOM Example</title>
+</head>
+<body>
+    <header id="header">
+        <h1><a href="home.aspx" id="home_link">Title to your site</a></h1>
+    </header>
+    <h1>Hello World!</h1>
+    <p>While this is a <strong>very basic HTML document</strong>, it actually serves as detailed example of the Document Object Model(DOM)</p>
+
+    <script type="text/javascript">
+        var display1, display2;
+        display1 = document.getElementById('header');
+        document.write("<br/>");
+        display2 = document.getElementById('home_link');
+        document.write("<br/>");
+    </script>
+</body>
+</html>
